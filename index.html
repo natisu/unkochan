@@ -19,13 +19,15 @@
 
     <!-- Add a placeholder for the Twitch embed -->
     <div class="twitch-wrapper">
+      <input type="checkbox" id="hide-twitch" checked>
+      <label for="hide-twitch">Twitch埋め込み表示／非表示</label>
       <div id="twitch-embed"></div>
     </div>
 
     <div class="twitter-wrapper">
       <div class="twitter-embed">
         <a class="twitter-timeline"
-          height="400px"
+          height="inherit"
           width="100%"
           data-lang="ja"
           data-theme="dark"
@@ -35,7 +37,7 @@
       </div>
       <div class="twitter-embed">
         <a class="twitter-timeline"
-          height="400px"
+          height="inherit"
           width="100%"
           data-lang="ja"
           data-theme="dark"
@@ -58,7 +60,7 @@
   <script type="text/javascript">
     new Twitch.Player("twitch-embed", {
       width: "100%",
-      height: 360,
+      height: "100%",
       autoplay: false,
       channel: "kato_junichi0817"
     });

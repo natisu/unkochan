@@ -38,8 +38,14 @@ header {
   transition: 200ms;
 }
 
-.twitch-wrapper {
-  text-align: center;
+#hide-twitch:checked ~ #twitch-embed {
+  display: block;
+}
+
+#twitch-embed {
+  display: none;
+  width: 100%;
+  height: 360px;
 }
 
 .twitter-wrapper {
@@ -52,7 +58,9 @@ header {
 
 .twitter-embed {
   /* border: solid 1px tomato; */
-  width: 380px;
+  width: 360px;
+  height: 800px;
+  padding: 10px;
   background-color: black;
 }
 
